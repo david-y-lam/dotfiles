@@ -29,9 +29,9 @@ tramp
 *.class
 
 # generated files
-bin/
-gen/
-target/
+**/bin/
+**/gen/
+**/target/
 
 # Local configuration file (sdk path, etc)
 local.properties
