@@ -16,3 +16,17 @@
 
 (add-hook 'LaTeX-mode-hook 'turn-on-reftex)
 (setq reftex-plug-into-AUCTeX t)
+
+
+;; Scrolling with touchpad
+;; Taken from http://stackoverflow.com/questions/5710334/how-can-i-get-mouse-selection-to-work-in-emacs-and-iterm2-on-mac
+(require 'mouse) ;; needed for iterm2 compatibility
+(xterm-mouse-mode t)
+(global-set-key [mouse-4] '(lambda ()
+                           (interactive)
+                           (scroll-down 1)))
+(global-set-key [mouse-5] '(lambda ()
+                           (interactive)
+                           (scroll-up 1)))
+(setq mouse-sel-mode t)
+(defun track-mouse (e))
