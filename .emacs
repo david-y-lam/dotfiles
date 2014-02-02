@@ -41,3 +41,7 @@
    kept-new-versions 6
    kept-old-versions 2
    version-control t)       ; use versioned backups
+
+;; Remove menu bar on start-up.
+;; Reminder: F10 brings up menu in a new buffer, not that I use it.
+(menu-bar-mode 0)
